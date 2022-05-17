@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  singleframephp:
+    image: cbdemo
+    container_name: php8cbcontainer
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8080:80"
+      - "443:443"
